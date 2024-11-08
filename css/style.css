@@ -231,15 +231,11 @@ ul{
 .offering-card{
     border-radius: 20px;
     position: relative;
+    
 }
-.offering-card-body::before{
-    content: '';
-    top: 0;
-    left: 0;
-    position: absolute;
-    /* background: blue; */
-    width: 100%;
-    height: 100%;
+.offering-card:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
 }
 .offering-card img{
     border-radius: 20px;
@@ -251,7 +247,6 @@ ul{
 .offering-card img:hover{
     box-shadow: none;
 }
-
 
 
 .k-o-heading{
@@ -274,6 +269,7 @@ ul{
     align-items: center;
     justify-content: center;
     font-family: "Poppins";
+    border-bottom: 1px solid var(--glyph);
 
 }
 
@@ -288,6 +284,15 @@ ul{
     background: url('../images/footer-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#off-heading, #off-text{
+
+    color: var(--glyph) !important;
+}
+
+#off-heading{
+    border-bottom: 1px solid var(--glyph);
 }
 
 
